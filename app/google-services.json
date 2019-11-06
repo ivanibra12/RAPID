@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "417889776997",
+    "firebase_url": "https://csit314-methodol-1552904966440.firebaseio.com",
+    "project_id": "csit314-methodol-1552904966440",
+    "storage_bucket": "csit314-methodol-1552904966440.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417889776997:android:6f82334623c8a0f3",
+        "android_client_info": {
+          "package_name": "ii954.csci314au19.fake_uber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417889776997-i8mnttagfr1i3rcjlt95mftd4n00m6ll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ii954.csci314au19.fake_uber",
+            "certificate_hash": "4cbcfdcd5b9929e1f7b220b04f246d9b3f88c354"
+          }
+        },
+        {
+          "client_id": "417889776997-ft29dlg4ssqb1s8irgtr73dgq3q456kp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRT3q4XsZ5xfJXErKTZdnkpIHX9iRmVVM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417889776997-ft29dlg4ssqb1s8irgtr73dgq3q456kp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/vehicleTextView"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:text="Vehicle : XXXXXX (XXXXXX)"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/vehicleTypeTextView"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vehicleTextView"
+                android:text="Vehicle type : "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/problemTextView"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vehicleTypeTextView"
+                android:text="Problem : "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/distanceTextView"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/problemTextView"
+                android:text="Distance : "
+                android:textColor="#000000" />
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_below="@id/vehicleTextView"
+                android:layout_toRightOf="@id/vehicleTypeTextView"
+                android:src="@mipmap/baseline_keyboard_arrow_right_black_24dp"/>
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

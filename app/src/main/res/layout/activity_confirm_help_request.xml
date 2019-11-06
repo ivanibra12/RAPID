@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmHelpRequestActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/paymentSuccessfulTextView"
+            android:text=""/>
+
+        <!--//////////////////////////////////////////////////-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:background="@drawable/ic_layout_border2dp"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/ic_layout_underline">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:text="Vehicle Details"
+                    android:id="@+id/vehicleDetailsTextView"/>
+
+                <TextView
+                    android:layout_width="232dp"
+                    android:layout_height="45dp"
+                    android:paddingRight="8dp"
+                    android:gravity="right|center"
+                    android:textSize="18sp"
+                    android:text="NICKNAME"
+                    android:id="@+id/vehicleNicknameTextView"
+                    android:layout_toRightOf="@id/vehicleDetailsTextView"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="16sp"
+                    android:id="@+id/vehicleBrandTextView"
+                    android:text="Brand : " />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="16sp"
+                    android:id="@+id/vehicleModelTextView"
+                    android:text="Model : "/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="16sp"
+                    android:id="@+id/vehicleYearTextView"
+                    android:text="Year : "/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="16sp"
+                    android:id="@+id/vehicleTypeTextView"
+                    android:text="Type : "/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="16sp"
+                    android:id="@+id/vehicleRegnumTextView"
+                    android:text="Registration number : "/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="16sp"
+                    android:id="@+id/vehicleInsurancenumTextView"
+                    android:text="Insurance number : "/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--//////////////////////////////////////////////////-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@drawable/ic_layout_border2dp"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="265dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/ic_layout_underline">
+
+                <TextView
+                    android:layout_width="3720dp"
+                    android:layout_height="45dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:text="Problem Selected"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:id="@+id/problemTextView"
+                android:text="XXXXXX XXXXXXXXXX" />
+
+
+        </LinearLayout>
+
+        <!--//////////////////////////////////////////////////-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_layout_border2dp"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="378dp"
+            android:layout_marginBottom="96dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/ic_layout_underline">
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="45dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:text="Description"
+                    android:id="@+id/descriptionTextView"/>
+
+                <TextView
+                    android:layout_width="92dp"
+                    android:layout_height="45dp"
+                    android:paddingRight="8dp"
+                    android:gravity="right|center"
+                    android:textSize="18sp"
+                    android:text="0/300"
+                    android:id="@+id/textCountTextView"
+                    android:layout_toRightOf="@id/descriptionTextView"/>
+
+            </RelativeLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/additionalMessageInputLayout"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="left|top"
+                    android:hint="Additional problem description"
+                    android:maxLength="300"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <!--//////////////////////////////////////////////////-->
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Confirm Help Request"
+            android:textSize="25sp"
+            android:background="@drawable/rounded_button_corner"
+            android:id="@+id/confirmButton"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="bottom"
+            android:textAllCaps="false"/>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResponsesActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/currentRequestLayout"
+            android:orientation="vertical"
+            android:background="@drawable/ic_layout_border2dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Current request status"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                android:background="@drawable/ic_layout_underline"/>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:id="@+id/requestIDTextView"
+                        android:textSize="16sp"
+                        android:gravity="left|center"
+                        android:text="Request ID : rZZXXXZZXXXXXXZZZZZZXXXXXX"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:id="@+id/vehicleTextView"
+                        android:textSize="16sp"
+                        android:gravity="left|center"
+                        android:text="Vehicle : XXXXXX (XXXXXX)"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:id="@+id/requestDateTextView"
+                        android:textSize="16sp"
+                        android:gravity="left|center"
+                        android:text="Request Date : DD/MM/YYYY"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:id="@+id/requestTimeTextView"
+                        android:textSize="16sp"
+                        android:gravity="left|center"
+                        android:text="Request Time : HH:MM:SS"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:id="@+id/problemTextView"
+                        android:textSize="16sp"
+                        android:gravity="left|center"
+                        android:text="Problem : XXXXXXX XX XXXXXX"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/problemDescTextView"
+                        android:textSize="16sp"
+                        android:gravity="left|center"
+                        android:text="Additional note : XXXXXXX XX XXXXXX"/>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel Request"
+            android:background="@drawable/rounded_button_corner"
+            android:id="@+id/cancelRequestButton"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="238dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="298dp"
+            android:id="@+id/responsesLayout"
+            android:orientation="vertical"
+            android:background="@drawable/ic_layout_border2dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Responses"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                android:background="@drawable/ic_layout_underline"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/responsesRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:itemCount="10">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/noResponsesTextView"
+                    android:gravity="center"
+                    android:text="There's no response\nPlease wait..."
+                    android:textSize="24sp"
+                    android:visibility="invisible"/>
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/emptyTextView"
+            android:gravity="center"
+            android:text="There's no ongoing help request"
+            android:textSize="24sp"
+            android:visibility="invisible"/>
+
+
+    </FrameLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/sidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/sidebar_header"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

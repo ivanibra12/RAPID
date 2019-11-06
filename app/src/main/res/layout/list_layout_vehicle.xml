@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textViewvNickname"
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Nickname"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textViewBrand"
+                android:layout_width="389dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewvNickname"
+                android:layout_marginLeft="5dp"
+                android:text="Brand : "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/textViewvModel"
+                android:layout_width="389dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewBrand"
+                android:layout_marginLeft="5dp"
+                android:text="Model : "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textViewvRegNo"
+                android:layout_width="389dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewvModel"
+                android:layout_marginLeft="5dp"
+                android:text="Registration No : "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

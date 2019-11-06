@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/descTextView"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="PAYID-XXXXXXXXXXXXXXXXXXXXXXXX"
+                android:textSize="18sp"
+                android:layout_marginRight="20dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descTextView"
+                android:text="DD/MM/YYYY"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/amountTextView"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/descTextView"
+                android:text="A$9999999"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_below="@id/amountTextView"
+                android:layout_toRightOf="@id/dateTextView"
+                android:src="@mipmap/baseline_keyboard_arrow_right_black_24dp"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/idTextView"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="jxx000xxddmmyyxx000xxhhmmss"
+                android:textSize="20sp"
+                android:layout_marginRight="20dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/vehicleTextView"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTextView"
+                android:text="Vehicle : XXXXXX (XXXXXX)"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/jobDateTextView"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vehicleTextView"
+                android:text="Job date : DD/MM/YYYY"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/jobStatusTextView"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobDateTextView"
+                android:text="Job status : XXXXXXX"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_below="@id/vehicleTextView"
+                android:layout_toRightOf="@id/jobStatusTextView"
+                android:src="@mipmap/baseline_keyboard_arrow_right_black_24dp"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

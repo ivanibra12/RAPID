@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="secondaryColor">#ffffff</color>
+
+    <color name="colorSliderBackground">#EBE9E9</color>
+    <color name="colorSwitchColor">#A2A0A0</color>
+    <color name="colorTextColor">#000000</color>
+
+
+    <color name="lightGreyButtons">#cccccc</color>
+    <color name="darkGreyButtons">#aaaaaa</color>
+    <color name="fadeGreyColor">#bcbcbc</color>
+
+</resources>

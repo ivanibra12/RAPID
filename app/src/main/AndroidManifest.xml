@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ii954.csci314au19.fake_uber">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".JobDetailsActivity"
+            android:label="Job Details"></activity>
+        <activity
+            android:name=".JobHistoryProfessionalActivity"
+            android:label="Job History"></activity>
+        <activity
+            android:name=".TransactionHistoryProfessionalActivity"
+            android:label="Transaction History" />
+        <activity
+            android:name=".HistoryProfessionalActivity"
+            android:label="History" />
+        <activity
+            android:name=".ReportActivity"
+            android:label="Report" />
+        <activity
+            android:name=".JobServiceDetailsActivity"
+            android:label="Service Job Details" />
+        <activity
+            android:name=".JobHistoryActivity"
+            android:label="Service Job History" />
+        <activity
+            android:name=".JobOngoingActivity"
+            android:label="Ongoing Job" />
+        <activity
+            android:name=".JobFinishActivity"
+            android:label="End Job" />
+        <activity
+            android:name=".JobActivity"
+            android:label="Job" />
+        <activity
+            android:name=".RequestDetailsActivity"
+            android:label="Request Details">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="geo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdateSecurityProfessionalActivity"
+            android:label="Update Privacy and Security" />
+        <activity
+            android:name=".EditAccountProfessionalActivity"
+            android:label="My Account" />
+        <activity
+            android:name=".SettingsProfessionalActivity"
+            android:label="Settings" />
+        <activity
+            android:name=".ProfessionalMainActivity"
+            android:label="Main Menu" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".UserMainActivity"
+            android:label="Main Menu" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings" />
+        <activity
+            android:name=".UserRegisterActivity"
+            android:label="New Account" />
+        <activity
+            android:name=".EditAccountActivity"
+            android:label="My Account" />
+        <activity
+            android:name=".MyVehicleActivity"
+            android:label="My Vehicles" />
+        <activity
+            android:name=".ProfessionalDocSubmitActivity"
+            android:label="Submit Document" />
+        <activity
+            android:name=".AddVehicleActivity"
+            android:label="Add Vehicle" />
+        <activity
+            android:name=".EditVehicleActivity"
+            android:label="Edit Vehicle" />
+        <activity
+            android:name=".SelectMembershipActivity"
+            android:label="Select Membership" />
+        <activity
+            android:name=".PaymentMethodActivity"
+            android:label="Select Payment Method" />
+        <activity
+            android:name=".PaypalActivity"
+            android:label="PayPal Payment" />
+        <activity
+            android:name=".ResponsesActivity"
+            android:label="Responses" />
+        <activity
+            android:name=".HistoryActivity"
+            android:label="History" />
+        <activity
+            android:name=".TransactionHistoryActivity"
+            android:label="Transaction History" />
+        <activity
+            android:name=".MembershipHistoryActivity"
+            android:label="Membership History" />
+        <activity
+            android:name=".RequestHistoryActivity"
+            android:label="Help Request History" />
+        <activity
+            android:name=".ConfirmHelpRequestActivity"
+            android:label="Confirm Help Request" />
+        <activity
+            android:name=".ChangeMembershipActivity"
+            android:label="Change Membership" />
+        <activity
+            android:name=".UpdateSecurityActivity"
+            android:label="Update Privacy and Security" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="ii954.csci314au19.fake_uber.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

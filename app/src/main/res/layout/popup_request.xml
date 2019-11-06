@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="390dp"
+    android:layout_height="302dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Request Details"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGreyButtons"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="Request ID : "
+                        android:id="@+id/idText"/>
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@id/idText"
+                        android:id="@+id/idTextView"
+                        android:text="rZZXXXZZXXXXXXZZZZZZXXXXXX"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="Vehicle : "
+                        android:id="@+id/vehicleText"/>
+
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@id/vehicleText"
+                        android:id="@+id/vehicleTextView"
+                        android:text="xxxxx (Xxxxxx)"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="Request date : "
+                        android:id="@+id/dateText"/>
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@id/dateText"
+                        android:id="@+id/dateTextView"
+                        android:text="dd/mm/yyyy"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="Request time : "
+                        android:id="@+id/timeText"/>
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@id/timeText"
+                        android:id="@+id/timeTextView"
+                        android:text="hh:mm:ss"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="Problem : "
+                        android:id="@+id/problemText"/>
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@id/problemText"
+                        android:id="@+id/problemTextView"
+                        android:text="problem"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:paddingVertical="4dp"
+                        android:text="Additional note : "
+                        android:id="@+id/noteText"/>
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingVertical="4dp"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@id/noteText"
+                        android:id="@+id/noteTextView"
+                        android:text="notes "/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="Status : "
+                        android:id="@+id/statusText"/>
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@id/statusText"
+                        android:id="@+id/statusTextView"
+                        android:text="ongoing"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGreyButtons"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right|bottom"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:text="Close"
+        android:id="@+id/closeButton"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+</LinearLayout>

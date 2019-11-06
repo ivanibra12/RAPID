@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeMembershipActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="18dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="Current membership status"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="100dp"
+            android:id="@+id/pay2goLayout"
+            android:orientation="vertical"
+            android:background="@drawable/ic_layout_border2dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/membershipTextView"
+                android:gravity="center"
+                android:text="Pay2Go"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:background="@drawable/ic_layout_underline"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/descriptionTextView"
+                    android:textSize="16sp"
+                    android:text="@string/pay2goDesc"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/startDateTextView"
+                    android:textSize="16sp"
+                    android:gravity="left|center"
+                    android:text=""/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:id="@+id/endDateTextView"
+                    android:textSize="16sp"
+                    android:gravity="left|center"
+                    android:text=""/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:text="Upgrade"
+            android:id="@+id/upgradeButton"
+            android:background="@drawable/rounded_button_corner"
+            android:layout_gravity="bottom"/>
+
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <group android:id="@+id/user_menu">
+        <item android:id="@+id/nav_home" android:title="Main Menu"
+            android:icon="@mipmap/ic_home_black_24dp"/>
+
+        <item android:id="@+id/nav_account" android:title="My Account"
+            android:icon="@mipmap/account2"/>
+
+        <item android:id="@+id/nav_vehicles" android:title="My Vehicles"
+            android:icon="@mipmap/vehicle"/>
+
+        <item android:id="@+id/nav_history" android:title="History"
+            android:icon="@mipmap/transactionhistory1"/>
+
+        <item android:id="@+id/nav_responses" android:title="Request and Responses"
+            android:icon="@mipmap/reponses"/>
+
+        <item android:id="@+id/nav_settings" android:title="Settings"
+            android:icon="@mipmap/settings1"/>
+    </group>
+
+</menu>

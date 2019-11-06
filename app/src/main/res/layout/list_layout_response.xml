@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/idTextView"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:text="Professional id : xx00xxx"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTextView"
+                android:text="Name : xxxx xxxx"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/distanceTextView"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTextView"
+                android:text="Distance : XXXXXXX"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_below="@id/idTextView"
+                android:layout_toRightOf="@id/distanceTextView"
+                android:src="@mipmap/baseline_keyboard_arrow_right_black_24dp"/>
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

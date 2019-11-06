@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="390dp"
+    android:layout_height="302dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Membership Details"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGreyButtons"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="Membership ID : "
+                        android:layout_marginVertical="4dp"
+                        android:id="@+id/idText"/>
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@id/idText"
+                        android:id="@+id/idTextView"
+                        android:layout_marginVertical="4dp"
+                        android:text="mXXXXXXXXuYYXXXYY"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="Duration : "
+                        android:id="@+id/durationText"
+                        android:layout_marginVertical="4dp"/>
+
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@id/durationText"
+                        android:id="@+id/durationTextView"
+                        android:layout_marginVertical="4dp"
+                        android:text="x xxxxx"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="Start date : "
+                        android:id="@+id/startDateText"/>
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@id/startDateText"
+                        android:id="@+id/startDateTextView"
+                        android:text="dd/mm/yyyy"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="End date : "
+                        android:id="@+id/endDateText"/>
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@id/endDateText"
+                        android:id="@+id/endDateTextView"
+                        android:text="dd/mm/yyyy"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="Transaction ID : "
+                        android:id="@+id/TIDtext"
+                        android:layout_marginVertical="4dp"/>
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@id/TIDtext"
+                        android:id="@+id/tidTextView"
+                        android:text="PAYID-XXXXXXXXXXXXXXXXXXXXXXXX"
+                        android:layout_marginVertical="4dp"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGreyButtons"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right|bottom"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:text="Close"
+        android:id="@+id/closeButton"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="15dp"
+android:orientation="vertical"
+tools:context=".UserRegisterActivity">
+
+    <TextView
+        android:id="@+id/switchLabel"
+        android:layout_marginTop="40dp"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:text="User"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <io.ghyeok.stickyswitch.widget.StickySwitch
+        android:id="@+id/sticky_switch"
+        android:layout_marginBottom="15dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:ss_animationDuration="600"
+        app:ss_animationType="line"
+        app:ss_iconPadding="10dp"
+        app:ss_iconSize="24dp"
+        app:ss_leftIcon="@mipmap/ic_person_black_24dp"
+        app:ss_rightIcon="@mipmap/ic_work_black_24dp"
+        app:ss_sliderBackgroundColor="@color/colorSliderBackground"
+        app:ss_switchColor="@color/colorSwitchColor"
+        app:ss_textColor="@color/colorPrimaryDark"
+        app:ss_textSize="10sp" />
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/text_input_FName"
+    android:layout_marginBottom="15dp"
+    app:errorEnabled="true">
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First name"
+        android:inputType="text" />
+</android.support.design.widget.TextInputLayout>
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/text_input_LName"
+    android:layout_marginBottom="15dp"
+    app:errorEnabled="true">
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Last name"
+        android:inputType="text"/>
+</android.support.design.widget.TextInputLayout>
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/text_input_hpnumber"
+    android:layout_marginBottom="15dp"
+    app:errorEnabled="true">
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Mobile Number"
+        android:inputType="phone"/>
+</android.support.design.widget.TextInputLayout>
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/text_input_email"
+    android:layout_marginBottom="15dp"
+    app:errorEnabled="true">
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+</android.support.design.widget.TextInputLayout>
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/text_input_password"
+    android:layout_marginBottom="15dp"
+    app:errorEnabled="true"
+    app:passwordToggleEnabled="true">
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+</android.support.design.widget.TextInputLayout>
+
+<Button
+    android:id="@+id/buttonRegister"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:text="Sign Up" />
+
+</LinearLayout>

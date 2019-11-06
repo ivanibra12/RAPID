@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">RAPID</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="api_key">AIzaSyA4Kn_D9CtAZ5nMBmDLfAKbvLjliZgn5pI</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA4Kn_D9CtAZ5nMBmDLfAKbvLjliZgn5pI</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <string name="loginLabel">RAPID</string><!--Roadside Assistant Professional Instant Delivery-->
+    <string name="loginButton">Sign In</string>
+    <string name="userSignupButton">Sign Up as User</string>
+    <string name="professionalNextButton">Next</string>
+    <string name="professionalSignupButton">Sign Up as Professional</string>
+
+
+    <string name="switchUserLabel">User</string>
+    <string name="switchProfessionalLabel">Professional</string>
+
+
+    <!--Firebase database references name-->
+    <string name="storageImageDirectoryName">images</string>
+    <string name="userDatabaseName">user</string>
+    <string name="vehicleDatabaseName">vehicle</string>
+    <string name="professionalDatabaseName">professional</string>
+    <string name="professionalOnlineDatabaseName">professionalOnline</string>
+    <string name="serverDatabaseName">server</string>
+    <string name="transactionDatabaseName">transaction</string>
+    <string name="userTransactionDatabaseName">userTransaction</string>
+    <string name="membershipDatabaseName">membership</string>
+    <string name="requestDatabaseName">request</string>
+    <string name="userRequestDatabaseName">userRequest</string>
+    <string name="ongoingRequestDatabaseName">ongoingRequest</string>
+    <string name="professionalRequestDatabaseName">professionalRequest</string>
+    <string name="responseDatabaseName">response</string>
+    <string name="userResponseDatabaseName">userResponse</string>
+    <string name="professionalResponseDatabaseName">professionalResponse</string>
+    <string name="ongoingJobDatabaseName">ongoingJob</string>
+    <string name="jobDatabaseName">job</string>
+    <string name="userJobDatabaseName">userJob</string>
+    <string name="professionalJobDatabaseName">professionalJob</string>
+    <string name="outgoingTransactionDatabaseName">outgoingTransaction</string>
+    <string name="professionalTransactionDatabaseName">professionalTransaction</string>
+    <string name="reportDatabaseName">report</string>
+
+    <!--vehicle type array-->
+    <string-array name="vehicleTypeArray">
+        <item>Convertible</item>
+        <item>Coupe</item>
+        <item>Hatchback</item>
+        <item>EV (Electric Vehicle)</item>
+        <item>Light Truck</item>
+        <item>SUV</item>
+        <item>Sedan</item>
+        <item>Ute (Coupe Utility)</item>
+        <item>Van</item>
+        <item>MiniVan</item>
+        <item>Wagon</item>
+        <item>Sport Car</item>
+        <item>4x4</item>
+    </string-array>
+
+    <!--common problems array-->
+    <string-array name="commonProblemsArray">
+        <item>Flat Tire</item>
+        <item>Out of Gas</item>
+        <item>Dead Battery</item>
+        <item>Car Overheating</item>
+        <item>Broken Windshield</item>
+        <item>Other or Unknown</item>
+    </string-array>
+
+    <!--Membership types and details-->
+    <string name="pay2goText">Pay 2 Go</string>
+    <string name="pay2goDesc">- Expensive\n- Bad choice\n- $69.69 / service request</string>
+    <string name="quarterYearText">3 Month Membership</string>
+    <string name="quarterYearDesc">- Worth the price in long run\n- Good choice\n- $30 / 3 month</string>
+    <string name="halfYearText">6 Month Membership</string>
+    <string name="halfYearDesc">- Worth the price in long run\n- Better choice\n- $50 / 6 month</string>
+    <string name="annualText">Annual Membership</string>
+    <string name="annualDesc">- Worth the price in long run\n- Best choice\n- Save you when you need it\n- $80 / year</string>
+    <string name="pay2goPrice">69.69</string>
+
+</resources>
